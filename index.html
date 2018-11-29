@@ -100,6 +100,24 @@
         <article class="post">
         <div class="inner">
             <header class="post-header">
+                <h2 class="post-title"><a href="/awk-bi-ji.html" rel="bookmark" title="Permalink to awk 笔记">awk 笔记</a>
+                </h2>
+                <span class="post-meta">
+                        <a href="/author/yw.html">Yw</a>
+                     | <time datetime="周四 29 十一月 2018">周四 29 十一月 2018</time>
+                </span>
+                <div class="clear"></div>
+            </header>
+                <section class="post-excerpt">
+                    <p>
+                        去掉fastq文件中的UMI（前21bp）,再将文件输出到标准输出 if else 嵌套判断 match() 函数 substr() 函数 cat $fq | awk '{ if (match($0,/^@/)) { print $0 } else if ( $0=="+" ) { print $0 } else { print substr($0,22) } }' | less
+                    </p>
+                </section>
+            </div>
+        </article>
+        <article class="post">
+        <div class="inner">
+            <header class="post-header">
                 <h2 class="post-title"><a href="/shell-string-parsing.html" rel="bookmark" title="Permalink to Shell - String Parsing">Shell - String Parsing</a>
                 </h2>
                 <span class="post-meta">
